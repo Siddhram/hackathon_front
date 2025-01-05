@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import axios from 'axios';
-
+import langflow from './assets/image.png'
 function App() {
   const [select, setselect] = useState('');
   const [mess, setmess] = useState({ message: '' });
@@ -29,8 +29,8 @@ function App() {
 
 
 
-    <section>
-  <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+    <section className='mt-3 rounded-lg'>
+  <div className="bg-gray-50 mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
     <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
       <div>
         <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
@@ -80,10 +80,10 @@ function App() {
       </div>
       </div>
 
-      <div>
+      <div >
         <img
-          src="https://images.unsplash.com/photo-1731690415686-e68f78e2b5bd?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          className="rounded"
+        className=' rounded-lg'
+          src={langflow}
           alt=""
         />
       </div>
